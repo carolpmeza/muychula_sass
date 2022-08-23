@@ -1,3 +1,15 @@
+a{
+    text-decoration: none;
+
+    &:active{
+        color:unset ;
+    }
+
+    &:visited{
+        color:unset ;
+    }
+}
+
 header{
     background-color: pink;
     height: 5%;
@@ -29,6 +41,14 @@ header{
         justify-content: center;
         align-items: center;
     }
+}
+
+footer{
+    height: 5vh;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenedor-tipos{
@@ -93,4 +113,139 @@ header{
         background-size: cover;
         background-position: center;
     }
+}
+
+.contenedor-ofertas{
+    background: rgb(207, 168, 191);
+    color: rgb(223, 21, 149);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr, 2fr;
+
+    &_title{
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .tarjeta{
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 20px;
+        align-items: top;
+        text-align: center;
+    
+        &__img{
+            width: 100%;
+            height: 50%;
+            border-radius: 20px;
+        }
+
+        .boton {
+            border: black 1px solid;
+            border-radius: 20px;
+          
+            background-color: black;
+            color: white;
+          
+            padding: 2px 2px;
+
+            &:hover {
+                border: pink 2px solid;
+                background-color: rgb(223, 21, 149);;
+                color: pink;
+              }
+          }
+
+          &:hover {
+            border: rgb(223, 21, 149) 2px solid;
+            background-color: white;
+            color: rgb(223, 21, 149);
+          }
+    }
+
+}
+
+.contenedor-ocasion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+
+    &_tarjeta{
+        width: 80%;
+        height: 100vh;
+        color: white;
+        text-shadow:1px 1px 2px rgb(223, 21, 149);
+    
+        margin: 20px auto;
+        border: 2px solid rgb(223, 21, 149);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+          
+        &-1{
+            background-image: url(../media/nights\ out.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &-2{
+            background-image: url(../media/weekend.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &-3{
+            background-image: url(../media/dating.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+    }
+
+
+}
+
+/*Basicos*/
+.product-container{
+    width: 80%;
+    padding: 10%;
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+}
+
+/*RENTAS*/
+.renta{
+    &-container{
+        height: 80vh;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    &-img{
+        border: solid black 2px;
+        height: 100%;
+        background-image: url(../media/rental.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &-description{
+        border: solid black 2px;
+        height: 100%;
+    }
+}
+    
+
+
 }

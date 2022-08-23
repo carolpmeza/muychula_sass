@@ -1,3 +1,13 @@
+a {
+  text-decoration: none;
+}
+a:active {
+  color: unset;
+}
+a:visited {
+  color: unset;
+}
+
 header {
   background-color: pink;
   height: 5%;
@@ -24,6 +34,14 @@ header-cart {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  height: 5vh;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contenedor-tipos {
@@ -76,6 +94,112 @@ header-cart {
   background-image: url(../media/rental.jpeg);
   background-size: cover;
   background-position: center;
+}
+
+.contenedor-ofertas {
+  background: rgb(207, 168, 191);
+  color: rgb(223, 21, 149);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr, 2fr;
+}
+.contenedor-ofertas_title {
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.contenedor-ofertas .tarjeta {
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 20px;
+  align-items: top;
+  text-align: center;
+}
+.contenedor-ofertas .tarjeta__img {
+  width: 100%;
+  height: 50%;
+  border-radius: 20px;
+}
+.contenedor-ofertas .tarjeta .boton {
+  border: black 1px solid;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding: 2px 2px;
+}
+.contenedor-ofertas .tarjeta .boton:hover {
+  border: pink 2px solid;
+  background-color: rgb(223, 21, 149);
+  color: pink;
+}
+.contenedor-ofertas .tarjeta:hover {
+  border: rgb(223, 21, 149) 2px solid;
+  background-color: white;
+  color: rgb(223, 21, 149);
+}
+
+.contenedor-ocasion {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+}
+.contenedor-ocasion_tarjeta {
+  width: 80%;
+  height: 100vh;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(223, 21, 149);
+  margin: 20px auto;
+  border: 2px solid rgb(223, 21, 149);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-ocasion_tarjeta-1 {
+  background-image: url(../media/nights\ out.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contenedor-ocasion_tarjeta-2 {
+  background-image: url(../media/weekend.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contenedor-ocasion_tarjeta-3 {
+  background-image: url(../media/dating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*Basicos*/
+.product-container {
+  width: 80%;
+  padding: 10%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+/*RENTAS*/
+.renta-container {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.renta-container-img {
+  border: solid black 2px;
+  height: 100%;
+  background-image: url(../media/rental.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.renta-container-description {
+  border: solid black 2px;
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
