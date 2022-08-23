@@ -179,6 +179,18 @@ footer {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
 }
+.product-container .tarjeta {
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 20px;
+  align-items: top;
+  text-align: center;
+}
+.product-container .tarjeta__img {
+  width: 100%;
+  height: 50%;
+  border-radius: 20px;
+}
 
 /*RENTAS*/
 .renta-container {
@@ -190,16 +202,42 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.renta-container-img {
+.renta-container__img {
   border: solid black 2px;
   height: 100%;
   background-image: url(../media/rental.jpeg);
   background-size: cover;
   background-position: center;
 }
-.renta-container-description {
+.renta-container__description {
   border: solid black 2px;
   height: 100%;
+}
+
+/*OFICINA*/
+.oficina-galery {
+  width: 100%;
+  padding: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.oficina-galery_img {
+  width: 100%;
+}
+.oficina-galery_item {
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+.oficina-galery_item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
 }
 
 /*# sourceMappingURL=styles.css.map */

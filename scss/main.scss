@@ -218,11 +218,25 @@ footer{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
 
+    .tarjeta{
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 20px;
+        align-items: top;
+        text-align: center;
+
+        &__img{
+            width: 100%;
+            height: 50%;
+            border-radius: 20px;
+        }
+    
+    }
+
 }
 
 /*RENTAS*/
-.renta{
-    &-container{
+.renta-container{
         height: 80vh;
     
         display: grid;
@@ -232,20 +246,53 @@ footer{
         justify-content: center;
         align-items: center;
 
-    &-img{
-        border: solid black 2px;
-        height: 100%;
-        background-image: url(../media/rental.jpeg);
-        background-size: cover;
-        background-position: center;
+        &__img{
+            border: solid black 2px;
+            height: 100%;
+            background-image: url(../media/rental.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+    
+        &__description{
+            border: solid black 2px;
+            height: 100%;
+        }
     }
 
-    &-description{
-        border: solid black 2px;
-        height: 100%;
+    /*OFICINA*/
+.oficina-galery {
+    width: 100%;
+    padding: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+
+    &_img{
+        width:100% ;
     }
+
+    &_item{
+        align-items: center;
+        justify-content: center;
+    
+        
+        border-radius: 4px;
+        transition: transform 0.3s ease-in-out ;
+
+        &:hover{
+            filter: opacity(0.9);
+            transform: scale(1.04);
+        }
+    }
+
+
+
 }
     
 
 
-}
