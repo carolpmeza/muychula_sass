@@ -1,0 +1,24 @@
+/*RENTAS*/
+.renta-container{
+    height: 80vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    &__img{
+        border: solid black 2px;
+        height: 100%;
+        background-image: url(../media/rental.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__description{
+        border: solid black 2px;
+        height: 100%;
+    }
+}
