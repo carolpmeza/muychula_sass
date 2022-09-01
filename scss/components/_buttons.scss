@@ -1,0 +1,54 @@
+@import "../utils/variables";
+
+.boton {
+    border: black 1px solid;
+    border-radius: 20px;
+  
+    background-color: black;
+    color: white;
+  
+    padding: 2px 2px;
+
+    &:hover {
+        border: pink 2px solid;
+        background-color: $color-primario;
+        color: pink;
+      }
+  }
+
+  .tarjeta{
+    .boton{
+        border: black 1px solid;
+    border-radius: 20px;
+  
+    background-color: black;
+    color: white;
+  
+    padding: 2px 2px;
+
+    &:hover {
+        border: pink 2px solid;
+        background-color: $color-primario;
+        color: pink;
+      }
+    }
+  }
+
+  .renta-container{
+    .boton{
+      border: black 1px solid;
+  border-radius: 20px;
+
+  background-color: black;
+  color: white;
+
+  padding: 2px 2px;
+
+  &:hover {
+      border: pink 2px solid;
+      background-color: $color-primario;
+      color: pink;
+    }
+  }
+  }
+

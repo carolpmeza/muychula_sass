@@ -1,12 +1,22 @@
+//Base
 @use"./base/reset";
 @use "./base/typography";
 
+//Layout
 @use "./layout/header";
 @use "./layout/footer";
 
+
+//Pages
 @use "./pages/index";
+@use "./pages/basicos";
 @use "./pages/oficina";
 @use "./pages/temporada";
 @use "./pages/rentas";
 
-@import "./utils/variables";
+// Variables
+@use "./utils/variables";
+
+//Components
+@use "./components/media";
+@use "./components/buttons";

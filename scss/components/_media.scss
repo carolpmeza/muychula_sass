@@ -1,0 +1,164 @@
+@import "../utils/variables";
+
+@mixin xs {
+    @media (min-width: map-get($breakpoints, "xs")){
+        @content;
+    }      
+
+}
+
+@mixin sm {
+    @media (min-width: map-get($breakpoints, "sm")){
+        @content;
+    }      
+
+}
+
+@mixin md {
+    @media (min-width: map-get($breakpoints, "md")){
+        @content;
+    }      
+
+}
+
+@mixin lg {
+    @media (min-width: map-get($breakpoints, "lg")){
+        @content;
+    }      
+
+}
+
+//Responsive para color del footer
+footer {
+    @include xs {
+        background-color: lightblue;
+    }
+
+    @include sm {
+        background-color: lightgoldenrodyellow;
+    }
+
+    @include md {
+        background-color: rgb(248, 170, 248);
+    }
+
+    @include lg{
+        background-color: lightgreen;       
+    }
+
+}
+
+//Responsive para color del header
+header{
+    @include xs {
+        background-color: lightblue;
+    }
+
+    @include sm {
+        background-color: lightgoldenrodyellow;
+    }
+
+    @include md {
+        background-color: rgb(248, 170, 248);
+    }
+
+    @include lg{
+        background-color: lightgreen;       
+    }
+}
+
+//Relacion aspecto de contenedor ocasion
+.contenedor-ocasion_tarjeta{
+    @include lg{
+        width: 40%;      
+    }
+}
+
+//Ajuste de relacion en menu de opciones por categoria
+.contenedor-tipos{
+    @include lg{
+        height: 90vh;
+    }
+}
+
+//Responsive para Galeria en la pagina oficina
+.oficina-galery{
+    @include xs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include sm {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include md {
+        grid-template-columns:repeat(3, 1fr);
+    }
+
+    @include lg{
+        grid-template-columns: repeat(4, 1fr);      
+    }
+
+}
+
+//Responsive para contenedor de productos
+.product-container{
+    @include xs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include sm {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include md {
+        grid-template-columns:repeat(3, 1fr);
+    }
+
+    @include lg{
+        grid-template-columns: repeat(4, 1fr);      
+    }
+}
+
+//Responsive para contenedor de renta de vestidos
+.renta-container{
+    @include xs {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr;
+    }
+
+    @include sm {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr;
+    }
+
+    @include md {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        text-align: center;
+    }
+
+    @include lg{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;    
+    }
+}
+
+//Responsive para contenedor de basicos 
+.contenedor-basicos-tarjetas{
+    @include xs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include sm {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include md {
+        grid-template-columns:repeat(5, 1fr);
+    }
+
+    @include lg{
+        grid-template-columns: repeat(6, 1fr);      
+    }
+}

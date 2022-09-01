@@ -1,0 +1,41 @@
+@import "../utils/variables";
+
+//Contenedor de productos de venta basicos
+.contenedor-basicos{
+    border: solid gray;
+    height: 85vh;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+
+    &-tarjetas{
+        margin-top: 10px;
+        background-color: white;
+        border: #ddd;
+        height: 90%;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+    }
+}
+
+.tarjeta{
+ background-color: white;
+ margin: 5px;
+ border: 2px solid gray;
+ border-radius: 16px;
+ box-sizing: border-box;
+
+ &:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+}
+
+/*Extend*/
+.tarjeta--agotado{
+    @extend .tarjeta;
+    background-color: rgba(194, 189, 189, 0.419);
+}
+

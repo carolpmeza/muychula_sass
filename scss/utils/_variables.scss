@@ -1,1 +1,11 @@
+//Theme colors
 $color-primario: rgb(223, 21, 149);
+
+//Screen resolutions for Resposive functionality
+$breakpoints:(
+"xs": 100px,
+"sm": 520px,
+"md": 728px,
+"lg": 1024px,
+);
+

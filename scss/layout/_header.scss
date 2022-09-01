@@ -1,18 +1,24 @@
+//Importacion de variables
+@import"../utils/variables";
+
+
+//Encabezado
 header{
+    width: 100%;
     background-color: pink;
     height: 5%;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr 1fr;
     grid-template-rows: 1fr;
 
-
     &-menu{
         display: flex;
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
     }
 
-    &-title{text-align: center;
+    &-title{
+        text-align: center;
         color: aliceblue;
         text-shadow:1px 1px 2px black;
 
@@ -29,4 +35,13 @@ header{
         justify-content: center;
         align-items: center;
     }
+
+
+    h1{
+        text-align: center;
+        color: aliceblue;
+        text-shadow:1px 1px 2px black
+        
+    }
 }
+
