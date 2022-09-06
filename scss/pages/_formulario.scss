@@ -1,8 +1,9 @@
 @import "../utils/variables";
 
 form{
+    margin-top: 10px;
     max-width: 1400px;
-    height: 100%;
+    height: 80vh;
 
 
 }
@@ -13,6 +14,6 @@ legend{
 }
 
 
->fieldset>div{
+fieldset>div{
     gap: 3px;
 }

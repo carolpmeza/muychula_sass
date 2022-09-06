@@ -11,6 +11,15 @@ h1{
     text-align: center;
 }
 
+h2{
+    @extend h1
+}
+
+h3{
+    @extend h1;
+    color: lightpink
+}
+
 a>h1:hover{
     color: $color-primario;
 }
