@@ -2,7 +2,7 @@
 @import"../utils/variables";
 
 
-//Encabezado
+// Formato general del Encabezado
 header{
     width: 100%;
     background-color: pink;
@@ -44,4 +44,43 @@ header{
         
     }
 }
+
+/*Icono menu hamburguesa*/
+.header-menu{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Icono usuario */
+.header-user{
+    @extend .header-menu;
+}
+
+/*Icono carrito*/
+.header-cart{
+    @extend .header-menu;
+}    
+
+/*Sub-menu en hamburguesa*/
+nav ul li{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background:white ;
+    position: absolute;
+    top: 90px;
+    padding: 14px 0px;
+    visibility: visible;
+    opacity:0 ;
+    box-shadow: 0px 0px 10px 0px;
+    z-index: 10;
+
+    &:hover{
+        visibility: visible;
+        opacity: 1;
+        top: 70px;
+    }
+}
+
 

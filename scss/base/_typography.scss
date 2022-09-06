@@ -1,3 +1,6 @@
+//Importacion de variables
+@import"../utils/variables";
+
 //Font family
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -6,4 +9,12 @@
 //Titulos centrados
 h1{
     text-align: center;
+}
+
+a>h1:hover{
+    color: $color-primario;
+}
+
+a>h3:hover{
+    color: $color-primario;
 }

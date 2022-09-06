@@ -1,0 +1,119 @@
+/*Special*/
+.contenedor-special{
+    color: white;
+    text-decoration: none;
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass-special{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    border-radius: 30px;
+    height: 230px;
+    width: 430px;
+    margin-top: 220px;
+    position: absolute;
+
+    background-color: rgba(93, 233, 255, 0.4);
+    backdrop-filter: blur(1px);
+
+    text-align: center;
+    transition: 1.5 all;
+    overflow: hidden;
+}
+
+.glass-special:hover{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    height: 451px;
+    width: 430px;
+    margin-top: 0;
+    background-color: rgba(32,72,78,0.4);
+    transition: 1.5s all ;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+
+.glass-special:hover.tallas{
+    margin-top: 10px;
+    transition: 1.5s all;
+}
+
+.cabecera-special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding-top: 25px;
+}
+
+.contenedor-special_img{
+    height: 450px;
+    width: 430px;
+    border-radius: 30px;
+
+    display: flex;
+
+    box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.75);
+    background-color: aqua;
+}
+
+.tallas{
+    margin-top: 70px;  
+}
+
+.tallas-existencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.talla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.talla:hover{
+    background-color:rgba(32,72,78,0.4);
+
+}
+
+.contenedor-precio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contenedor-precio button{
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid rgba(32,72,78,0.4);
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.contenedor-precio button:hover{
+    background-color:  rgba(32,72,78,0.4);
+}
