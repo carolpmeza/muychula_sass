@@ -62,25 +62,4 @@ header{
     @extend .header-menu;
 }    
 
-/*Sub-menu en hamburguesa*/
-nav ul li{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    background:white ;
-    position: absolute;
-    top: 90px;
-    padding: 14px 0px;
-    visibility: visible;
-    opacity:0 ;
-    box-shadow: 0px 0px 10px 0px;
-    z-index: 10;
-
-    &:hover{
-        visibility: visible;
-        opacity: 1;
-        top: 70px;
-    }
-}
-
 
