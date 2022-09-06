@@ -1,6 +1,8 @@
 @import "../utils/variables";
 //Menu de opciones por categoria de ropa
 .contenedor-tipos{
+    max-width: 1400px;
+    margin: auto;
     background: gray;
     border: solid white 5px;
     height: 60vh;
@@ -32,7 +34,7 @@
         height: 100%;
     
     
-        background-image: url(../media/basicosss.jpg);
+        background-image: url(../media/tipos-basicos.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -43,7 +45,7 @@
         width: 100%;
         height: 100%;
     
-        background-image: url(../media/officcina.jpg);
+        background-image: url(../media/tipos-oficina.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -53,7 +55,7 @@
     width: 100%;
     height: 100%;
 
-    background-image: url(../media/tendency.jpg);
+    background-image: url(../media/tipos-temporada.jpg);
     background-size: cover;
     background-position: center;
     }
@@ -63,7 +65,7 @@
         width: 100%;
         height: 100%;
     
-        background-image: url(../media/rental.jpeg);
+        background-image: url(../media/tipos-renta.jpeg);
         background-size: cover;
         background-position: center;
     }
@@ -71,6 +73,8 @@
 
 //Ofertas
 .contenedor-ofertas{
+    max-width: 1400px;
+    margin: auto;
     background: rgb(207, 168, 191);
     color: $color-primario;
     display:grid;
@@ -82,13 +86,14 @@
         text-align: center;
         grid-column-start: 1;
         grid-column-end: 5;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
     .tarjeta{
-        padding: 5px;
+        padding: 1px;
         border: 2px solid black;
         border-radius: 20px;
-        align-items: top;
         font-size: 1rem;
         text-align: center;
     
@@ -96,6 +101,19 @@
             width: 100%;
             height: 70%;
             border-radius: 20px;
+        }
+
+
+
+        &__titulo{
+            padding-top: 2px;
+            padding-bottom: 5px;
+            margin: 0px;
+        }
+
+        &>p{
+            margin-top: 0px;
+            margin-bottom: 10px;
         }
 
         .boton {
@@ -127,6 +145,8 @@
 
 //opciones de ropa por ocasion
 .contenedor-ocasion{
+    max-width: 1400px;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;

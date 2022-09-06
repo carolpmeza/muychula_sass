@@ -1,0 +1,18 @@
+@import "../utils/variables";
+
+form{
+    max-width: 1400px;
+    height: 100%;
+
+
+}
+
+legend{
+    color: $color-primario;
+    font-weight: 600;
+}
+
+
+>fieldset>div{
+    gap: 3px;
+}

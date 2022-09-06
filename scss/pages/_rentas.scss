@@ -1,7 +1,9 @@
 /*Descripcion de servicio de rentas*/
 .renta-container{
+    max-width: 1400px;
     height: 80vh;
     padding: auto;
+    padding-bottom: 20px;
     margin: auto;
 
     display: grid;
@@ -13,12 +15,16 @@
     &__img{
         border: solid black 2px;
         height: 100%;
-        background-image: url(../media/rental.jpeg);
+        background-image: url(../media/tipos-renta.jpeg);
         background-size: cover;
         background-position: center;
     }
 
     &__description{
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         border: solid black 2px;
         height: 100%;
     }

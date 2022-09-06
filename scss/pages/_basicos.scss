@@ -2,6 +2,7 @@
 
 //Contenedor de productos de venta basicos
 .contenedor-basicos{
+    max-width: 1400px;
     height: 85vh;
     padding: auto;
     margin: auto;
@@ -40,6 +41,7 @@
 
 
 .basicos-galery {
+    max-width: 1400px;
     width: 100%;
     padding: auto;
     margin: auto;
@@ -77,6 +79,17 @@
 
 }
 
-.basicos-galery_item h4{
-    padding-top: 0;
+.basicos-galery_item{
+    &>h4{
+        padding-top: 0px;
+        margin: 0px;
+    }
+
+    &>p{
+        padding-top: 2px;
+        padding-bottom: 4px;
+        margin: 0px;
+    }
+
+    
 }

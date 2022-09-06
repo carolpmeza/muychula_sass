@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Renta de vestidos</title>
+</head>
+<body>
+
+    <header class="header-container"> <!--Header-->
+        <div class="header-menu">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+            <h4>Menu</h4>
+        </div>
+
+
+        <div class="header-title">
+            <a href="../index.html"><h1>Curvy babes</h1></a>
+        </div>
+
+
+        <div class="header-user">
+            Bienvenida, Lizbeth!
+            <span class="material-symbols-outlined">
+                person
+            </span>
+        </div>
+
+
+        <div class="header-cart">
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+        </div>
+
+    </header>
+
+    <form class="form__contacto">
+        <fieldset>
+        <legend>Informacion de contacto</legend>
+                           
+                <div>
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre completo">
+                </div>
+    
+                <div>
+                    <label for="telefono-usuario">Telefono</label>
+                    <input type="tel" id="tel" placeholder="Telefono personal">
+                </div>
+    
+                <div>
+                    <label for="email-usuario">Correo Electronico</label>
+                    <input type="email" id="email" name="email" placeholder="Correo Electronico">
+                </div>
+    
+                <div>
+                    <label for="Suscribirme al NewsLetter">Suscribirme al NewsLetter</label>
+                    <input type="checkbox" id="newsletter" name="news-usuario">
+                </div>
+    
+                <div>
+                    <label for="contact-by">Metodo de contacto preferido:</label>
+        
+                    <label for="">Telefono</label>
+                    <input type="radio" id="contacto" name="metodo-contacto" value="metodo-cont">
+        
+                    <label for="">Whatsapp</label>
+                    <input type="radio" id="contacto" name="metodo-contacto" value="metodo-cont"> <!---When you want user to pick just 1 value, use same name and value -->
+                </div>
+    
+                <div>
+                    <label for="contact-source">Como te enteraste de nosotros?</label>
+                    <select name="contact-source" id="contact-source">
+                        <option value="source1">Instagram</option>
+                        <option value="source2">Facebook</option>
+                    </select>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Programa tu cita de prueba</legend>
+
+                <div>
+                    <label for="fecha">Fecha de la cita</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+
+                <div>
+                    <label for="hora">Horario de la cita</label>
+                    <select name="horario" id="horario">
+                        <option value="1800">06:00 pm</option>
+                        <option value="1900">07:00 pm</option>
+                        <option value="2000">08:00 pm</option>
+                        <option value="2100">09:00 pm</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="servicio">Tipo de evento</label>
+                    <select name="servicios" id="servicio">
+                        <option value="select">Selecciona uno</option>
+                        <option value="experiencia-gourmet">Informal/Casual</option>
+                        <option value="social">Formal/Empresarial</option>
+                        <option value="empresarial">Cocktail</option>
+                        <option value="empresarial">Bautizo</option>
+                        <option value="Clases">Bodas</option>
+                        <option value="Clases">XV Años</option>
+                        <option value="Clases">Bodas</option>
+                        <option value="empresarial">Rigurosa etiqueta</option>
+                    </select>
+                </div>
+
+                
+               
+                
+                <div>
+                    <label for="fecha">Fecha del evento</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+
+                <div>
+                    <!---Direccion--->
+                    <label for="venue">Lugar del evento</label>
+                    <input type="text">
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Permitenos ofrecerte la mejor opcion</legend>
+                <div>
+                    <label for="servicio">Que estilo de vestimenta le describe mejor?</label>
+                    <select name="servicios" id="servicio">
+                        <option value="select">Selecciona uno</option>
+                        <option value="experiencia-gourmet">Romantica</option>
+                        <option value="social">Bohemia</option>
+                        <option value="empresarial">Clasica</option>
+                        <option value="empresarial">Alternaiva</option>
+                        <option value="Clases">Conservadora</option>
+                        <option value="Clases">Elegante</option>
+                        <option value="Clases">Atrevida</option>
+                        <option value="empresarial">Fresca</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="servicio">Seleccione su talla de espalda</label>
+                    <select name="servicios" id="servicio">
+                        <option value="select">Selecciona uno</option>
+                        <option value="experiencia-gourmet">38</option>
+                        <option value="social">40</option>
+                        <option value="empresarial">42</option>
+                        <option value="empresarial">44</option>
+                        <option value="Clases">46</option>
+                        <option value="Clases">48</option>
+                        <option value="Clases">50</option>
+                        <option value="empresarial">52</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="servicio">Seleccione su talla de copa</label>
+                    <select name="servicios" id="servicio">
+                        <option value="select">Selecciona uno</option>
+                        <option value="experiencia-gourmet">B</option>
+                        <option value="social">BB</option>
+                        <option value="empresarial">C</option>
+                        <option value="empresarial">CC</option>
+                        <option value="Clases">D</option>
+                        <option value="Clases">DD</option>
+                        <option value="Clases">E</option>
+                        <option value="empresarial">G</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="servicio">Seleccione su talla de pantalon</label>
+                    <select name="servicios" id="servicio">
+                        <option value="select">Selecciona uno</option>
+                        <option value="experiencia-gourmet">38</option>
+                        <option value="social">40</option>
+                        <option value="empresarial">42</option>
+                        <option value="empresarial">44</option>
+                        <option value="Clases">46</option>
+                        <option value="Clases">48</option>
+                        <option value="Clases">50</option>
+                        <option value="empresarial">52</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="descripcion">Comentarios</label>
+                    <textarea cols="30" rows="10" id="descripcion"></textarea>  
+                </div>
+
+                <div>
+                    <input type="submit" value="Limpiar todo">
+                    <input type="submit" value="Solicitar cita">
+                </div>
+
+            </fieldset>        
+     </form>
+    
+
+<footer> <!--Footer-->
+        <p>Desarrollado por Carolina Peña</p>
+</footer>
+    
+</body>
+</html>
