@@ -2,45 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="hermosa y moderna ropa en tallas extras para mujer">
+    <meta name="keywords" content="ropa vestimenta curvy tallas extras mujer bodypositive">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
     <title> Curvy Babes | Ropa curvy tallas extra</title>
 </head>
 <body>
-    <header class="header-container"> <!--Header-->
-        <div class="header-menu">
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-            <h4>Menu</h4>
-         </div>
-
-
-        <div class="header-title">
-            <a href="./index.html"><h1>Curvy babes</h1></a>
+<header class="header-container"> <!--Header-->
+        <div class="header">
+            <div class="dropdown">
+                <button class="link"><span class="material-symbols-outlined">menu</span></button>
+                     <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./pages/conocenos.html">Conocenos</a></li>
+                            <li><a href="./pages/basicos.html">Basicos</a></li>
+                            <li><a href="./pages/oficina.html">Oficina</a></li>
+                            <li><a href="./pages/temporada.html">Temporada</a></li>
+                            <li><a href="./pages/rentas.html">Renta de vestidos</a></li>
+                            <li><a href="./pages/contacto.html">Contacto</a></li>
+                        </ul>
+                     </div>
+            
+            </div>       
         </div>
-
-
+    
+           
+        <div class="header-title">
+             <a href="../index.html"><h1>Curvy babes</h1></a>
+        </div>
+    
+    
         <div class="header-user">
             <p><a href="./pages/login.html">Cuenta</a></p>
-            <span class="material-symbols-outlined">
-                person
-            </span>
+            <span class="material-symbols-outlined">person</span>
         </div>
-
-
+    
+    
         <div class="header-cart">
-            <span class="material-symbols-outlined">
-                shopping_cart
-            </span>
+            <span class="material-symbols-outlined">shopping_cart</span>
         </div>
+    
+</header>
 
-    </header>
-
+<main>
     <section class="contenedor-tipos"> <!--Menu de opciones por tipo de vestimenta-->
         <div class="contenedor-tipos_box contenedor-tipos_box1"> 
             <a href="./pages/basicos.html"><h2>Basicos</h2></a>
@@ -64,7 +76,7 @@
         <h2 class="contenedor-ofertas_title">Ofertas en tus prendas favoritas</h2>
             
             <div class="tarjeta">
-                <img src="./media/ofertas-conjunto.jpg" alt="vestido tendencia corto flores colores talla extra grandes xl" class="tarjeta__img">
+                <img src="./media/ofertas-conjunto.png" alt="vestido tendencia corto flores colores talla extra grandes xl" class="tarjeta__img">
 
                     <h4 class="tarjeta__titulo">
                         Conjunto Blanco
@@ -74,7 +86,7 @@
             </div>
 
             <div class="tarjeta">
-                <img src="../media/ofertas-falditaverde.jpg" alt="manifalda falda verde talla extra grande xl" class="tarjeta__img">
+                <img src="../media/ofertas-falditaverde.png" alt="manifalda falda verde talla extra grande xl" class="tarjeta__img">
 
                 <h4 class="tarjeta__titulo">
                     Minifalda Verde
@@ -84,7 +96,7 @@
             </div>
 
             <div class="tarjeta">
-                <img src="../media/ofertas-faldasat.jpg" alt="falda maxi morada satin talla extra grande xl" class="tarjeta__img">
+                <img src="../media/ofertas-faldasat.png" alt="falda maxi morada satin talla extra grande xl" class="tarjeta__img">
 
                 <h4 class="tarjeta__titulo">
                     Falda Satinada
@@ -94,7 +106,7 @@
             </div>
 
             <div class="tarjeta">
-                <img src="../media/ofertas-croptop.jpg" alt="bikini traje de bano tanktop colores rosa talla extra grande xl" class="tarjeta__img">
+                <img src="../media/ofertas-croptop.png" alt="bikini traje de bano tanktop colores rosa talla extra grande xl" class="tarjeta__img">
 
                 <h4 class="tarjeta__titulo">
                     Crop top Aqua
@@ -106,8 +118,10 @@
     </section>
 
     <section class="contenedor-ocasion"> <!--Contenedor prendas por Ocasion-->
-        <h2>Encuentra el outfit perfecto para cualquier ocasion!</h2>
-        <h3>Puedes lucir hermosa en todas las tallas</h3>
+       <div class="contenedor-ocasion_title">
+           <h2>Encuentra el outfit perfecto para cualquier ocasion!</h2>
+           <h3>Puedes lucir hermosa en todas las tallas</h3>
+       </div>
 
         <div class="contenedor-ocasion_tarjeta contenedor-ocasion_tarjeta-1" alt="vestimenta outfit de noche nocturno fiesta">
             <h3><a>Outfits Nocturnos</a></h3>
@@ -123,19 +137,22 @@
             <h3>Outfits para Citas</h3>
         </div>
 
-
-
     </section>
+</main>
 
-    <footer> <!--Footer-->
+
+
+<footer> <!--Footer-->
         <div>
             <p>Desarrollado por Carolina Peña</p>
-            <h5>Contáctanos en nuestras redes sociales</h5>
-            <a class="btn-ws" href="https://wa.me/5219842308943">WhatsApp</a>
-            <a class="btn-in" href="https://www.instagram.com/">Instagram</a>
-            <a class="btn-fb" href="https://www.facebook.com/">Facebook</a>
+            <h5>Contáctanos!</h5>
+                    
+            <a class="btn-ws" href="https://wa.me/5219842308943"><img src="./media/002-whatsapp.png" alt="whatsapp shortcut"></a>
+            <a class="btn-in" href="https://www.instagram.com/"><img src="./media/001-instagram.png" alt="instagram shortcut"></a>
+            <a class="btn-fb" href="https://www.facebook.com/"><img src="./media/003-facebook.png" alt="facebook shortcut"></a>
+            <a class="btn-cn" href="../pages/contacto.html"><img src="./media/004-email.png" alt="formulario de contacto"></a>
         </div>
-    </footer>
+</footer>
 
 </body>
 </html>

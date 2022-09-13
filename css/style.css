@@ -7,11 +7,23 @@ a {
   text-decoration: none;
 }
 
+a {
+  color: unset;
+}
+
 a:active {
   color: unset;
 }
 
 a:visited {
+  color: unset;
+}
+
+p:active {
+  color: unset;
+}
+
+p:visited {
   color: unset;
 }
 
@@ -37,6 +49,7 @@ a > h3:hover {
 
 header {
   width: 100%;
+  margin-bottom: 0px;
   background-color: pink;
   height: 5%;
   display: grid;
@@ -80,19 +93,113 @@ header h1 {
 /*Icono carrito*/
 footer {
   width: 100%;
-  margin-top: 10px;
-  height: 10vh;
+  height: auto;
   background-color: pink;
   display: flexbox;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+footer > p {
+  margin: 0px;
+  padding: 3px;
+}
 footer > div {
   margin: 0px;
 }
+footer > div > p {
+  margin: 0px;
+}
 footer > div > h5 {
-  margin: 10px;
+  margin: 5px;
+}
+
+.btn-ws {
+  width: 32px;
+}
+.btn-ws:hover {
+  transform: scale(1.05);
+}
+
+.btn-in {
+  width: 32px;
+}
+.btn-in:hover {
+  transform: scale(1.05);
+}
+
+.btn-fb {
+  width: 32px;
+}
+.btn-fb:hover {
+  transform: scale(1.05);
+}
+
+.btn-cn {
+  width: 32px;
+}
+.btn-cn:hover {
+  transform: scale(1.05);
+}
+
+footer > a:active {
+  color: unset;
+}
+
+footer > a:visited {
+  color: unset;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #777;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.link:hover {
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.25rem);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown-menu.active {
+  opacity: 1;
+}
+
+.dropdown > .link:focus + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+li:hover {
+  color: rgb(223, 21, 149);
+  transform: scale(1.05);
 }
 
 .contenedor-tipos {
@@ -123,7 +230,7 @@ footer > div > h5 {
   border: white solid 5px;
   width: 100%;
   height: 100%;
-  background-image: url(../media/tipos-basicos.jpg);
+  background-image: url(../media/tipos-basicos.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -132,7 +239,7 @@ footer > div > h5 {
   border: white solid 5px;
   width: 100%;
   height: 100%;
-  background-image: url(../media/tipos-oficina.jpg);
+  background-image: url(../media/tipos-oficina.png);
   background-size: cover;
   background-position: center;
 }
@@ -140,7 +247,7 @@ footer > div > h5 {
   border: white solid 5px;
   width: 100%;
   height: 100%;
-  background-image: url(../media/tipos-temporada.jpg);
+  background-image: url(../media/tipos-temporada.png);
   background-size: cover;
   background-position: center;
 }
@@ -148,13 +255,15 @@ footer > div > h5 {
   border: white solid 5px;
   width: 100%;
   height: 100%;
-  background-image: url(../media/tipos-renta.jpeg);
+  background-image: url(../media/tipos-renta.png);
   background-size: cover;
   background-position: center;
 }
 
 .contenedor-ofertas {
+  width: 100%;
   max-width: 1400px;
+  height: auto;
   margin: auto;
   background: rgb(207, 168, 191);
   color: rgb(223, 21, 149);
@@ -166,10 +275,12 @@ footer > div > h5 {
   text-align: center;
   grid-column-start: 1;
   grid-column-end: 5;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 .contenedor-ofertas .tarjeta {
+  width: 23vw;
+  margin: auto;
   padding: 1px;
   border: 2px solid black;
   border-radius: 20px;
@@ -177,8 +288,7 @@ footer > div > h5 {
   text-align: center;
 }
 .contenedor-ofertas .tarjeta__img {
-  width: 100%;
-  height: 70%;
+  width: 22vw;
   border-radius: 20px;
 }
 .contenedor-ofertas .tarjeta__titulo {
@@ -204,7 +314,7 @@ footer > div > h5 {
 }
 .contenedor-ofertas .tarjeta:hover {
   border: rgb(223, 21, 149) 2px solid;
-  background-color: white;
+  background-color: rgb(207, 168, 191);
   color: rgb(223, 21, 149);
   filter: opacity(0.9);
   transform: scale(1.04);
@@ -214,33 +324,46 @@ footer > div > h5 {
   max-width: 1400px;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr, 2fr;
   text-align: center;
 }
+.contenedor-ocasion_title {
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contenedor-ocasion_title > h2 {
+  margin: 0;
+}
+.contenedor-ocasion_title > h3 {
+  margin: 0;
+}
 .contenedor-ocasion_tarjeta {
-  width: 80%;
-  height: 100vh;
+  width: 30vw;
+  height: 50vh;
   color: white;
   text-shadow: 1px 1px 2px rgb(223, 21, 149);
-  margin: 20px auto;
+  margin: auto;
   border: 2px solid rgb(223, 21, 149);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .contenedor-ocasion_tarjeta-1 {
-  background-image: url(../media/nights\ out.jpg);
+  background-image: url(../media/ocasion-1.png);
   background-size: cover;
   background-position: center;
 }
 .contenedor-ocasion_tarjeta-2 {
-  background-image: url(../media/weekend.jpg);
+  background-image: url(../media/ocasion-2.png);
   background-size: cover;
   background-position: center;
 }
 .contenedor-ocasion_tarjeta-3 {
-  background-image: url(../media/dating.jpg);
+  background-image: url(../media/ocasion-3.png);
   background-size: cover;
   background-position: center;
 }
@@ -376,7 +499,7 @@ footer > div > h5 {
   max-width: 1400px;
   height: 50vh;
   padding: auto;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -385,34 +508,78 @@ footer > div > h5 {
 }
 .renta-container__img {
   border: solid black 2px;
-  height: 100%;
-  background-image: url(../media/renta2.jpg);
+  background-image: url(../media/renta-2.png);
   background-size: cover;
   background-position: center;
 }
 .renta-container__description {
-  display: flexbox;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  text-align: center;
   border: solid black 2px;
   height: 100%;
 }
 
-form {
-  margin-top: 10px;
-  max-width: 1400px;
-  height: 80vh;
-  margin: auto;
-}
-
 legend {
-  color: rgb(223, 21, 149);
-  font-weight: 600;
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 2px 2px rgb(223, 21, 149);
+  padding: 2px;
 }
 
-fieldset > div {
-  gap: 3px;
+fieldset > button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  color: rgb(248, 122, 176);
+}
+
+.form-login {
+  width: 100%;
+  height: 100vh;
+  max-width: 1400px;
+  background: rgb(226, 152, 216);
+  background: linear-gradient(90deg, rgb(226, 152, 216) 0%, rgb(71, 9, 121) 48%, rgb(0, 255, 255) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-renta {
+  width: 100%;
+  height: 100vh;
+  max-width: 1400px;
+  background: rgb(226, 152, 216);
+  background: linear-gradient(90deg, rgb(226, 152, 216) 0%, rgb(71, 9, 121) 48%, rgb(0, 255, 255) 100%);
+}
+
+.fieldset-renta_1, .fieldset-renta_3, .fieldset-renta_2 {
+  width: 60%;
+  background-color: white;
+  margin: auto;
+  padding: 0px;
+  border-radius: 5px;
+}
+
+.form-contacto {
+  width: 100%;
+  height: 100vh;
+  max-width: 1400px;
+  background: rgb(226, 152, 216);
+  background: linear-gradient(90deg, rgb(226, 152, 216) 0%, rgb(71, 9, 121) 48%, rgb(0, 255, 255) 100%);
+}
+
+.fieldset-contacto {
+  width: 40%;
+  background-color: white;
+  margin: auto;
+  padding: 0px;
+  border-radius: 5px;
 }
 
 /*Special*/

@@ -34,7 +34,7 @@
         height: 100%;
     
     
-        background-image: url(../media/tipos-basicos.jpg);
+        background-image: url(../media/tipos-basicos.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -45,7 +45,7 @@
         width: 100%;
         height: 100%;
     
-        background-image: url(../media/tipos-oficina.jpg);
+        background-image: url(../media/tipos-oficina.png);
         background-size: cover;
         background-position: center;
     }
@@ -55,7 +55,7 @@
     width: 100%;
     height: 100%;
 
-    background-image: url(../media/tipos-temporada.jpg);
+    background-image: url(../media/tipos-temporada.png);
     background-size: cover;
     background-position: center;
     }
@@ -65,7 +65,7 @@
         width: 100%;
         height: 100%;
     
-        background-image: url(../media/tipos-renta.jpeg);
+        background-image: url(../media/tipos-renta.png);
         background-size: cover;
         background-position: center;
     }
@@ -73,10 +73,14 @@
 
 //Ofertas
 .contenedor-ofertas{
+    width: 100%;
     max-width: 1400px;
+    height: auto;
     margin: auto;
+
     background: rgb(207, 168, 191);
     color: $color-primario;
+
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr, 2fr;
@@ -86,11 +90,13 @@
         text-align: center;
         grid-column-start: 1;
         grid-column-end: 5;
-        margin-top: 20px;
-        margin-bottom: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
 
     .tarjeta{
+        width: 23vw;
+        margin: auto;
         padding: 1px;
         border: 2px solid black;
         border-radius: 20px;
@@ -98,11 +104,9 @@
         text-align: center;
     
         &__img{
-            width: 100%;
-            height: 70%;
+          width: 22vw;
             border-radius: 20px;
         }
-
 
 
         &__titulo{
@@ -134,7 +138,7 @@
 
           &:hover {
             border: $color-primario 2px solid;
-            background-color: white;
+            background-color: rgb(207, 168, 191);
             color: $color-primario;
             filter: opacity(0.9);
             transform: scale(1.04);
@@ -148,17 +152,34 @@
     max-width: 1400px;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr, 2fr;
     text-align: center;
 
+    &_title{
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        &>h2{
+            margin: 0;
+        }
+
+        &>h3{
+            margin: 0;
+        }
+
+    }
+
     &_tarjeta{
-        width: 80%;
-        height: 100vh;
+        width: 30vw;
+        height: 50vh;
         color: white;
         text-shadow:1px 1px 2px rgb(223, 21, 149);
     
-        margin: 20px auto;
+        margin: auto;
         border: 2px solid rgb(223, 21, 149);
     
         display: flex;
@@ -167,19 +188,19 @@
 
           
         &-1{
-            background-image: url(../media/nights\ out.jpg);
+            background-image: url(../media/ocasion-1.png);
             background-size: cover;
             background-position: center;
         }
 
         &-2{
-            background-image: url(../media/weekend.jpg);
+            background-image: url(../media/ocasion-2.png);
             background-size: cover;
             background-position: center;
         }
 
         &-3{
-            background-image: url(../media/dating.jpg);
+            background-image: url(../media/ocasion-3.png);
             background-size: cover;
             background-position: center;
         }

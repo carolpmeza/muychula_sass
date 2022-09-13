@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="hermosos y modernos vestidos de renta en tallas extras para mujer">
+    <meta name="keywords" content="renta vestidos bodas fiestas curvy tallas extras mujer bodypositive">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
@@ -13,38 +15,47 @@
 <body>
 
     <header class="header-container"> <!--Header-->
-        <div class="header-menu">
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-            <h4>Menu</h4>
+        <div class="header">
+            <div class="dropdown">
+                <button class="link"><span class="material-symbols-outlined">menu</span></button>
+                     <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="./conocenos.html">Conocenos</a></li>
+                            <li><a href="./basicos.html">Basicos</a></li>
+                            <li><a href="./oficina.html">Oficina</a></li>
+                            <li><a href="./temporada.html">Temporada</a></li>
+                            <li><a href="./rentas.html">Renta de vestidos</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                        </ul>
+                     </div>
+            
+            </div>       
         </div>
-
-
+    
+           
         <div class="header-title">
-            <a href="../index.html"><h1>Curvy babes</h1></a>
+             <a href="../index.html"><h1>Curvy babes</h1></a>
         </div>
-
-
+    
+    
         <div class="header-user">
-            Bienvenida, Lizbeth!
-            <span class="material-symbols-outlined">
-                person
-            </span>
+            <p><a href="./login.html">Cuenta</a></p>
+            <span class="material-symbols-outlined">person</span>
         </div>
-
-
+    
+    
         <div class="header-cart">
-            <span class="material-symbols-outlined">
-                shopping_cart
-            </span>
+            <span class="material-symbols-outlined">shopping_cart</span>
         </div>
-
+    
     </header>
 
-    <form class="form__contacto">
-        <fieldset>
+
+<main>
+    <form class="form-renta">
         <legend>Informacion de contacto</legend>
+        <fieldset class="fieldset-renta_1">
                            
                 <div>
                     <label for="nombre">Nombre y Apellido</label>
@@ -85,9 +96,9 @@
                 </div>
             </fieldset>
     
-            <fieldset>
-                <legend>Programa tu cita de prueba</legend>
-
+            <legend>Programa tu cita de prueba</legend>
+            <fieldset class="fieldset-renta_2">
+                
                 <div>
                     <label for="fecha">Fecha de la cita</label>
                     <input type="date" name="fecha" id="fecha">
@@ -133,8 +144,8 @@
                 </div>
 
             </fieldset>
-            <fieldset>
-                <legend>Permitenos ofrecerte la mejor opcion</legend>
+            <legend>Permitenos ofrecerte la mejor opcion</legend>
+            <fieldset class="fieldset-renta_3">
                 <div>
                     <label for="servicio">Que estilo de vestimenta le describe mejor?</label>
                     <select name="servicios" id="servicio">
@@ -201,17 +212,27 @@
                 </div>
 
                 <div>
-                    <input type="submit" value="Limpiar todo">
-                    <input type="submit" value="Solicitar cita">
+                    <button type="reset">Limpiar todo</button>
+                    <button type="submit">Enviar</button>
                 </div>
 
             </fieldset>        
      </form>
     
+</main>
 
-<footer> <!--Footer-->
-        <p>Desarrollado por Carolina Peña</p>
-</footer>
+
+     <footer> <!--Footer-->
+        <div>
+            <p>Desarrollado por Carolina Peña</p>
+            <h5>Contáctanos!</h5>
+                    
+            <a class="btn-ws" href="https://wa.me/5219842308943"><img src="../media/002-whatsapp.png" alt="whatsapp shortcut"></a>
+            <a class="btn-in" href="https://www.instagram.com/"><img src="../media/001-instagram.png" alt="instagram shortcut"></a>
+            <a class="btn-fb" href="https://www.facebook.com/"><img src="../media/003-facebook.png" alt="facebook shortcut"></a>
+            <a class="btn-cn" href="../pages/contacto.html"><img src="../media/004-email.png" alt="formulario de contacto"></a>
+        </div>
+    </footer>
     
 </body>
 </html>

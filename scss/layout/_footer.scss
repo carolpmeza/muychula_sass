@@ -3,23 +3,71 @@
 //Pie de pagina
 footer{
     width: 100%;
-    margin-top: 10px;
-    height: 10vh;
+    height: auto;
     background-color: pink;
     display: flexbox;
     align-items: center;
     justify-content: center;
     text-align: center;
 
+    &>p{
+        margin: 0px;
+        padding: 3px;
+    }
+
     &>div{
         margin: 0px;
 
+        &>p{
+            margin: 0px;
+        }
+
 
         &>h5{
-            margin: 10px;
+            margin: 5px;
         }
+    }    
+}
+
+.btn-ws{
+    width: 32px;
+
+    &:hover{
+        transform: scale(1.05);
     }
-    
+}
+
+.btn-in{
+    width: 32px;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.btn-fb{
+    width: 32px;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.btn-cn{
+    width: 32px;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+
+footer>a:active{
+    color: unset;
+}
+
+footer>a:visited{
+    color:unset ;
 }
 
 

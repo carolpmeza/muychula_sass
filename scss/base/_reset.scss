@@ -10,6 +10,10 @@ a{
 
 }
 
+a{
+    color: unset;
+}
+
 a:active{
     color: unset;
 }
@@ -17,3 +21,13 @@ a:active{
 a:visited{
     color:unset ;
 }
+
+p:active{
+    color: unset;
+}
+
+p:visited{
+    color: unset;
+}
+
+
