@@ -533,6 +533,18 @@ input {
   color: rgb(248, 122, 176);
 }
 
+select {
+  color: rgb(248, 122, 176);
+}
+
+option {
+  color: rgb(248, 122, 176);
+}
+
+::placeholder {
+  color: rgb(248, 122, 176);
+}
+
 .form-login {
   width: 100%;
   height: 100vh;
@@ -543,26 +555,45 @@ input {
   align-items: center;
 }
 
-.fieldset-login {
-  background-color: white;
+.fieldset-login, .fieldset-contacto, .fieldset-renta_1, .fieldset-renta_3, .fieldset-renta_2 {
+  background-color: rgba(36, 48, 60, 0.8039215686);
+  width: 80%;
   margin: auto;
-  padding: 0px;
-  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.fieldset-loginlabel {
+  text-align: center;
+}
+
+.controls-login, .controls {
+  width: 90%;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  background: #24303c;
+}
+
+.boton-login {
+  width: 100%;
+  background-color: rgb(223, 21, 149);
+  border-radius: 7px;
+}
+
+.login-user, .login-passw {
+  text-align: center;
 }
 
 .form-renta {
   width: 100%;
-  height: 120vh;
+  height: 210vh;
   background: rgb(226, 152, 216);
   background: linear-gradient(90deg, rgb(226, 152, 216) 0%, rgb(71, 9, 121) 48%, rgb(0, 255, 255) 100%);
-}
-
-.fieldset-renta_1, .fieldset-renta_3, .fieldset-renta_2 {
-  width: 60%;
-  background-color: white;
-  margin: auto;
-  padding: 0px;
-  border-radius: 5px;
 }
 
 .form-contacto {
@@ -572,12 +603,12 @@ input {
   background: linear-gradient(90deg, rgb(226, 152, 216) 0%, rgb(71, 9, 121) 48%, rgb(0, 255, 255) 100%);
 }
 
-.fieldset-contacto {
-  width: 60%;
-  background-color: white;
-  margin: auto;
-  padding: 0px;
-  border-radius: 5px;
+.boton-limpiar {
+  background-color: lightgrey;
+}
+
+.boton-enviar {
+  background-color: rgb(226, 152, 216);
 }
 
 /*Special*/

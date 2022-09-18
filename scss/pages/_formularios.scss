@@ -18,6 +18,18 @@ input{
     color: rgb(248, 122, 176);
 }
 
+select{
+    color: rgb(248, 122, 176);
+}
+
+option{
+    color: rgb(248, 122, 176);
+}
+
+::placeholder{
+    color: rgb(248, 122, 176);
+}
+
 
 //Formulario de login
 .form-login{
@@ -31,28 +43,59 @@ input{
 }
 
 .fieldset-login{
-    background-color: white;
+    background-color: #24303ccd;
+    width: 80%;
     margin: auto;
-    padding: 0px;
-    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;;
+
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    >&label{
+        text-align: center;
+    }
+    
 }
 
+.controls-login{
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    display:inline-block ;
+    background: #24303c;
+}
+
+.boton-login{
+    width: 100%;
+    background-color: $color-primario;
+    border-radius: 7px;
+    
+}
+
+.login-user{
+    text-align: center;
+}
+
+.login-passw{
+    @extend .login-user;
+}
 
 
 //Formulario de renta
 .form-renta{
     width: 100%;
-    height: 120vh;
+    height: 210vh;
     background: rgb(226,152,216);
     background: linear-gradient(90deg, rgba(226,152,216,1) 0%, rgba(71,9,121,1) 48%, rgba(0,255,255,1) 100%);
 }
 
 .fieldset-renta_1{
-    width: 60%;
-    background-color: white;
-    margin: auto;
-    padding: 0px;
-    border-radius: 5px;
+    @extend .fieldset-login
+    
 }
 
 .fieldset-renta_2{
@@ -73,11 +116,21 @@ input{
 }
 
 .fieldset-contacto{
-    width: 60%;
-    background-color: white;
-    margin: auto;
-    padding: 0px;
-    border-radius: 5px;
+    @extend .fieldset-login
 
+}
+
+.controls{
+    @extend .controls-login
+}
+
+.boton-limpiar{
+    
+    background-color: lightgrey
+
+}
+
+.boton-enviar{
+    background-color: rgb(226,152,216)
 }
 
