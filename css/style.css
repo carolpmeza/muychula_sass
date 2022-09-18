@@ -576,7 +576,9 @@ textarea {
 .controls-login, .controls {
   width: 90%;
   padding: 10px;
-  margin: 5px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: none;
   border-radius: 10px;
   display: block;
@@ -584,9 +586,13 @@ textarea {
 }
 
 .boton-login {
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: rgb(223, 21, 149);
   border-radius: 7px;
+  display: block;
 }
 
 .login-user, .login-passw {
@@ -608,10 +614,18 @@ textarea {
 }
 
 .boton-limpiar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  display: inline-block;
   background-color: lightgrey;
 }
 
 .boton-enviar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  display: inline-block;
   background-color: rgb(226, 152, 216);
 }
 
