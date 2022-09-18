@@ -1,7 +1,6 @@
 @import "../utils/variables";
 //Menu de opciones por categoria de ropa
 .contenedor-tipos{
-    max-width: 1400px;
     margin: auto;
     background: gray;
     border: solid white 5px;
@@ -74,7 +73,6 @@
 //Ofertas
 .contenedor-ofertas{
     width: 100%;
-    max-width: 1400px;
     height: auto;
     margin: auto;
 
@@ -149,7 +147,6 @@
 
 //opciones de ropa por ocasion
 .contenedor-ocasion{
-    max-width: 1400px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
