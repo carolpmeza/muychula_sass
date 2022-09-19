@@ -180,3 +180,66 @@ header{
         grid-template-columns: repeat(4, 1fr);      
     }
 }
+
+.fieldset-login{
+    @include xs {
+        width: 80%;
+    }
+
+    @include sm {
+        width: 60%;
+    }
+
+    @include md {
+        width: 40%;
+    }
+
+    @include lg{
+        width: 30%;    
+    }
+}
+
+//FORMULARIOS
+.fieldset-contacto{
+    @include xs {
+        width: 80%;
+    }
+
+    @include sm {
+        width: 80%;
+    }
+
+    @include md {
+        width: 60%;
+    }
+
+    @include lg{
+        width: 60%;    
+    }
+}
+
+.fieldset-renta_1{
+    @include xs {
+        width: 80%;
+    }
+
+    @include sm {
+        width: 80%;
+    }
+
+    @include md {
+        width: 60%;
+    }
+
+    @include lg{
+        width: 60%;    
+    }
+}
+
+.fieldset-renta_2{
+    @extend .fieldset-renta_1;
+}
+
+.fieldset-renta_3{
+    @extend .fieldset-renta_1;
+}

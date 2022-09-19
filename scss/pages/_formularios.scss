@@ -7,11 +7,21 @@ legend{
     text-align: center;
     text-shadow: 2px 2px $color-primario;
     padding: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px ;
 }
 
 fieldset > button{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+fieldset>div{
+    margin: 10px;
+}
+
+label{
+    padding: 5px;
 }
 
 input{
@@ -33,6 +43,8 @@ option{
 textarea{
     color: rgb(248, 122, 176);
 }
+
+
 
 
 //Formulario de login
@@ -123,10 +135,17 @@ textarea{
     height: 100vh;
     background: rgb(226,152,216);
     background: linear-gradient(90deg, rgba(226,152,216,1) 0%, rgba(71,9,121,1) 48%, rgba(0,255,255,1) 100%);
+    justify-content: center;
+    align-items: center;
 }
 
 .fieldset-contacto{
-    @extend .fieldset-login
+    @extend .fieldset-login;
+   
+    &>div{
+        margin: 10px;
+    }
+    
 
 }
 
