@@ -31,15 +31,17 @@ p:visited {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1, h3, h2 {
+h1, h2 {
   text-align: center;
 }
 
 h3 {
+  text-align: center;
   color: lightpink;
+  text-shadow: 1px 1px 2px rgb(223, 21, 149);
 }
 
-a > h1:hover, a > h2:hover, a > h3:hover {
+a > h1:hover, a > h2:hover {
   color: rgb(223, 21, 149);
 }
 
@@ -50,7 +52,7 @@ a > h3:hover {
 header {
   width: 100%;
   margin-bottom: 0px;
-  background-color: pink;
+  background-color: rgba(255, 192, 203, 0.566);
   height: 5%;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr 1fr;
@@ -177,15 +179,24 @@ footer > a:visited {
 
 .dropdown-menu {
   position: absolute;
-  left: 0;
-  top: calc(100% + 0.25rem);
-  background-color: rgba(255, 255, 255, 0.9);
+  left: -15px;
+  top: calc(170% + 0.25rem);
+  background-color: rgba(255, 192, 203, 0.852);
+  margin: 2px;
   padding: 0.75rem;
   border-radius: 0.25rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+.dropdown-menu > ul {
+  margin: 0;
+  padding-left: 1px;
+}
+.dropdown-menu > ul > li {
+  padding: 5px;
+  font-size: medium;
 }
 
 .dropdown-menu.active {
@@ -263,7 +274,7 @@ li:hover {
   width: 100%;
   height: auto;
   margin: auto;
-  background: rgb(207, 168, 191);
+  background: white;
   color: rgb(223, 21, 149);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -280,6 +291,7 @@ li:hover {
   width: 23vw;
   margin: auto;
   padding: 1px;
+  padding-bottom: 10px;
   border: 2px solid black;
   border-radius: 20px;
   font-size: 1rem;
@@ -303,7 +315,7 @@ li:hover {
   border-radius: 20px;
   background-color: black;
   color: white;
-  padding: 2px 2px;
+  padding: 2px;
 }
 .contenedor-ofertas .tarjeta .boton:hover {
   border: pink 2px solid;
@@ -312,7 +324,7 @@ li:hover {
 }
 .contenedor-ofertas .tarjeta:hover {
   border: rgb(223, 21, 149) 2px solid;
-  background-color: rgb(207, 168, 191);
+  background-color: rgba(255, 192, 203, 0.707);
   color: rgb(223, 21, 149);
   filter: opacity(0.9);
   transform: scale(1.04);
@@ -320,6 +332,8 @@ li:hover {
 
 .contenedor-ocasion {
   margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr, 2fr;
@@ -739,43 +753,43 @@ textarea {
 
 @media (min-width: 100px) {
   footer {
-    background-color: lightblue;
+    background-color: rgba(255, 192, 203, 0.707);
   }
 }
 @media (min-width: 520px) {
   footer {
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(255, 192, 203, 0.707);
   }
 }
 @media (min-width: 728px) {
   footer {
-    background-color: rgb(248, 170, 248);
+    background-color: rgba(255, 192, 203, 0.566);
   }
 }
 @media (min-width: 1024px) {
   footer {
-    background-color: lightgreen;
+    background-color: rgba(255, 192, 203, 0.707);
   }
 }
 
 @media (min-width: 100px) {
   header {
-    background-color: lightblue;
+    background-color: rgba(255, 192, 203, 0.707);
   }
 }
 @media (min-width: 520px) {
   header {
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(255, 192, 203, 0.707);
   }
 }
 @media (min-width: 728px) {
   header {
-    background-color: rgb(248, 170, 248);
+    background-color: rgba(255, 192, 203, 0.707);
   }
 }
 @media (min-width: 1024px) {
   header {
-    background-color: lightgreen;
+    background-color: rgba(255, 192, 203, 0.707);
   }
 }
 

@@ -28,16 +28,28 @@
 
 .dropdown-menu{
     position: absolute;
-    left: 0;
-    top: calc(100% + .25rem);
-    background-color: rgba(255, 255, 255, 0.9);
+    left: -15px;
+    top: calc(170% + .25rem);
+    background-color: rgba(255, 192, 203, 0.852);
+    margin: 2px;
     padding: .75rem;
     border-radius: .25rem;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+
     
+    &>ul{
+        margin: 0;
+        padding-left: 1px;
+
+        &>li{
+            padding: 5px;
+           font-size: medium;
+        }
+        
+    }
 }
 
 .dropdown-menu.active{

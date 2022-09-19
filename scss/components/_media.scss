@@ -31,19 +31,19 @@
 //Responsive para color del footer
 footer {
     @include xs {
-        background-color: lightblue;
+        background-color: rgba(255, 192, 203, 0.707);
     }
 
     @include sm {
-        background-color: lightgoldenrodyellow;
+        background-color: rgba(255, 192, 203, 0.707);
     }
 
     @include md {
-        background-color: rgb(248, 170, 248);
+        background-color: rgba(255, 192, 203, 0.566);
     }
 
     @include lg{
-        background-color: lightgreen;       
+        background-color: rgba(255, 192, 203, 0.707);       
     }
 
 }
@@ -51,19 +51,19 @@ footer {
 //Responsive para color del header
 header{
     @include xs {
-        background-color: lightblue;
+        background-color: rgba(255, 192, 203, 0.707);
     }
 
     @include sm {
-        background-color: lightgoldenrodyellow;
+        background-color: rgba(255, 192, 203, 0.707);
     }
 
     @include md {
-        background-color: rgb(248, 170, 248);
+        background-color: rgba(255, 192, 203, 0.707);
     }
 
     @include lg{
-        background-color: lightgreen;       
+        background-color: rgba(255, 192, 203, 0.707);       
     }
 }
 

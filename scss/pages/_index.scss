@@ -76,7 +76,7 @@
     height: auto;
     margin: auto;
 
-    background: rgb(207, 168, 191);
+    background: white;
     color: $color-primario;
 
     display:grid;
@@ -96,6 +96,7 @@
         width: 23vw;
         margin: auto;
         padding: 1px;
+        padding-bottom: 10px;
         border: 2px solid black;
         border-radius: 20px;
         font-size: 1rem;
@@ -121,11 +122,10 @@
         .boton {
             border: black 1px solid;
             border-radius: 20px;
-          
             background-color: black;
             color: white;
-          
-            padding: 2px 2px;
+            padding: 2px;
+            
 
             &:hover {
                 border: pink 2px solid;
@@ -136,7 +136,7 @@
 
           &:hover {
             border: $color-primario 2px solid;
-            background-color: rgb(207, 168, 191);
+            background-color: rgba(255, 192, 203, 0.707);
             color: $color-primario;
             filter: opacity(0.9);
             transform: scale(1.04);
@@ -148,6 +148,8 @@
 //opciones de ropa por ocasion
 .contenedor-ocasion{
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr, 2fr;
