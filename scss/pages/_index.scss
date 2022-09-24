@@ -82,7 +82,7 @@
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr, 2fr;
-   
+
 
     &_title{
         text-align: center;
@@ -185,7 +185,7 @@
         justify-content: center;
         align-items: center;
 
-          
+
         &-1{
             background-image: url(../media/ocasion-1.png);
             background-size: cover;

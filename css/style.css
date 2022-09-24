@@ -809,9 +809,16 @@ textarea {
   }
 }
 
+@media (min-width: 728px) {
+  .contenedor-ocasion_tarjeta {
+    width: 70%;
+    height: 70vh;
+  }
+}
 @media (min-width: 1024px) {
   .contenedor-ocasion_tarjeta {
-    width: 40%;
+    width: 70%;
+    height: 70vh;
   }
 }
 
