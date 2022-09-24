@@ -56,20 +56,20 @@
     <form class="form-renta">
         <legend>Informacion de contacto</legend>
         <fieldset class="fieldset-renta_1">
-                           
+
                 <div>
                     <label for="nombre">Nombre y Apellido</label>
-                    <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre completo">
+                    <input class="controls" type="text" name="nombre" id="nombre-cliente" placeholder="Nombre completo">
                 </div>
     
                 <div>
                     <label for="telefono-usuario">Telefono</label>
-                    <input class="controls" type="tel" id="tel" placeholder="Telefono personal">
+                    <input class="controls" type="tel" id="tel-cliente" placeholder="Telefono personal">
                 </div>
     
                 <div>
                     <label for="email-usuario">Correo Electronico</label>
-                    <input class="controls" type="email" id="email" name="email" placeholder="Correo Electronico">
+                    <input class="controls" type="email" id="email-cliente" name="email" placeholder="Correo Electronico">
                 </div>
     
                 <div>
@@ -101,12 +101,12 @@
                 
                 <div>
                     <label for="fecha">Fecha de la cita</label>
-                    <input class="controls"type="date" name="fecha" id="fecha">
+                    <input class="controls"type="date" name="fecha" id="fecha-cita">
                 </div>
 
                 <div>
                     <label for="hora">Horario de la cita</label>
-                    <select class="controls" name="horario" id="horario">
+                    <select class="controls" name="horario" id="horario-cita">
                         <option value="1800">06:00 pm</option>
                         <option value="1900">07:00 pm</option>
                         <option value="2000">08:00 pm</option>
@@ -116,16 +116,16 @@
 
                 <div>
                     <label for="servicio">Tipo de evento</label>
-                    <select class="controls" name="servicios" id="servicio">
+                    <select class="controls" name="tipo-evento" id="servicio">
                         <option value="select">Selecciona uno</option>
-                        <option value="experiencia-gourmet">Informal/Casual</option>
-                        <option value="social">Formal/Empresarial</option>
-                        <option value="empresarial">Cocktail</option>
-                        <option value="empresarial">Bautizo</option>
-                        <option value="Clases">Bodas</option>
-                        <option value="Clases">XV Años</option>
-                        <option value="Clases">Bodas</option>
-                        <option value="empresarial">Rigurosa etiqueta</option>
+                        <option value="informal casual">Informal/Casual</option>
+                        <option value="empresarial">Formal/Empresarial</option>
+                        <option value="cocktail">Cocktail</option>
+                        <option value="bautizo">Bautizo</option>
+                        <option value="bodas">Bodas</option>
+                        <option value="xvanos">XV Años</option>
+                        <option value="bodas">Bodas</option>
+                        <option value="etiqueta">Rigurosa etiqueta</option>
                     </select>
                 </div>
 
@@ -134,13 +134,13 @@
                 
                 <div>
                     <label for="fecha">Fecha del evento</label>
-                    <input class="controls" type="date" name="fecha" id="fecha">
+                    <input class="controls" type="date" name="fecha" id="fecha-evento">
                 </div>
 
                 <div>
                     <!---Direccion--->
                     <label for="venue">Lugar del evento</label>
-                    <input class="controls" type="text">
+                    <input class="controls" type="text" id="lugar-evento">
                 </div>
 
             </fieldset>
@@ -148,7 +148,7 @@
             <fieldset class="fieldset-renta_3">
                 <div>
                     <label for="servicio">Que estilo le describe mejor?</label>
-                    <select class="controls" name="servicios" id="servicio">
+                    <select class="controls" name="servicios" id="estilo-cliente">
                         <option value="select">Selecciona uno</option>
                         <option value="romantica">Romantica</option>
                         <option value="bohemia">Bohemia</option>
@@ -163,7 +163,7 @@
 
                 <div>
                     <label for="servicio">Seleccione su talla de espalda</label>
-                    <select class="controls" name="servicios" id="servicio">
+                    <select class="controls" name="servicios" id="talla-espalda">
                         <option value="select">Selecciona uno</option>
                         <option value="38">38</option>
                         <option value="40">40</option>
@@ -178,7 +178,7 @@
 
                 <div>
                     <label for="servicio">Seleccione su talla de copa</label>
-                    <select class="controls" name="servicios" id="servicio">
+                    <select class="controls" name="servicios" id="talla-copa">
                         <option value="select">Selecciona uno</option>
                         <option value="B">B</option>
                         <option value="BB">BB</option>
@@ -193,7 +193,7 @@
 
                 <div>
                     <label for="servicio">Seleccione su talla de pantalon</label>
-                    <select class="controls" name="servicios" id="servicio">
+                    <select class="controls" name="servicios" id="talla-pantalon">
                         <option value="select">Selecciona uno</option>
                         <option value="38">38</option>
                         <option value="40">40</option>
@@ -208,7 +208,7 @@
 
                 <div>
                     <label for="descripcion">Comentarios</label>
-                    <textarea class="controls" cols="30" rows="10" id="descripcion" placeholder="Ingrese sus comentarios"></textarea>  
+                    <textarea class="controls" cols="30" rows="10" id="comentarios" placeholder="Ingrese sus comentarios"></textarea>  
                 </div>
 
                 <div>
@@ -217,7 +217,7 @@
                 </div>
 
             </fieldset>        
-     </form>
+    </form>
     
 </main>
 
