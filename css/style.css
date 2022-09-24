@@ -1002,12 +1002,12 @@ textarea {
 }
 @media (min-width: 728px) {
   .form-renta {
-    height: 180vh;
+    height: 200vh;
   }
 }
 @media (min-width: 1024px) {
   .form-renta {
-    height: 180vh;
+    height: 200vh;
   }
 }
 
