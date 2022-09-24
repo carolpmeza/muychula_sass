@@ -992,22 +992,22 @@ textarea {
 
 @media (min-width: 100px) {
   .form-renta {
-    height: 230vh;
+    height: 240vh;
   }
 }
 @media (min-width: 520px) {
   .form-renta {
-    height: 220vh;
+    height: 250vh;
   }
 }
 @media (min-width: 728px) {
   .form-renta {
-    height: 200vh;
+    height: 260vh;
   }
 }
 @media (min-width: 1024px) {
   .form-renta {
-    height: 180vh;
+    height: 270vh;
   }
 }
 

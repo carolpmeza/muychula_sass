@@ -231,19 +231,19 @@ header{
 
 .form-renta{
     @include xs {
-        height:230vh;
+        height:240vh;
     }
 
     @include sm {
-        height:220vh;
+        height:250vh;
     }
 
     @include md {
-        height:200vh;
+        height:260vh;
     }
 
     @include lg{
-        height:180vh;
+        height:270vh;
     }
 }
 
