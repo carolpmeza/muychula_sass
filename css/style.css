@@ -953,6 +953,12 @@ textarea {
 }
 
 @media (min-width: 100px) {
+  .form-contacto {
+    height: 120vh;
+  }
+}
+
+@media (min-width: 100px) {
   .fieldset-contacto {
     width: 80%;
   }
@@ -970,6 +976,27 @@ textarea {
 @media (min-width: 1024px) {
   .fieldset-contacto {
     width: 60%;
+  }
+}
+
+@media (min-width: 100px) {
+  .form-renta {
+    height: 230vh;
+  }
+}
+@media (min-width: 520px) {
+  .form-renta {
+    height: 200vh;
+  }
+}
+@media (min-width: 728px) {
+  .form-renta {
+    height: 180vh;
+  }
+}
+@media (min-width: 1024px) {
+  .form-renta {
+    height: 180vh;
   }
 }
 

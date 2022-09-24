@@ -200,6 +200,11 @@ header{
 }
 
 //FORMULARIOS
+.form-contacto{
+    @include xs {
+        height: 120vh;
+    }
+}
 .fieldset-contacto{
     @include xs {
         width: 80%;
@@ -215,6 +220,24 @@ header{
 
     @include lg{
         width: 60%;    
+    }
+}
+
+.form-renta{
+    @include xs {
+        height:230vh;
+    }
+
+    @include sm {
+        height:200vh;
+    }
+
+    @include md {
+        height:180vh;
+    }
+
+    @include lg{
+        height:180vh;
     }
 }
 
