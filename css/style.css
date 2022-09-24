@@ -383,6 +383,10 @@ li:hover {
   transform: scale(1.04);
 }
 
+.main-conocenos {
+  height: 100vh;
+}
+
 .contenedor-basicos {
   height: 85vh;
   padding: auto;
@@ -1032,7 +1036,7 @@ textarea {
   border: black 1px solid;
   border-radius: 20px;
   background-color: black;
-  color: white;
+  color: black;
   padding: 2px 2px;
 }
 .boton:hover {
