@@ -383,8 +383,28 @@ li:hover {
   transform: scale(1.04);
 }
 
+.section-conocenos {
+  width: 100%;
+  padding: 78px 0px;
+}
+
 .main-conocenos {
-  height: 100vh;
+  width: 95%;
+  max-width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-conocenos {
+  width: 40vw;
+  height: auto;
+}
+
+.text-conocenos {
+  width: 40vw;
+  text-align: center;
 }
 
 .contenedor-basicos {
@@ -1029,6 +1049,17 @@ textarea {
 @media (min-width: 1024px) {
   .fieldset-renta_1, .fieldset-renta_3, .fieldset-renta_2 {
     width: 60%;
+  }
+}
+
+@media (min-width: 100px) {
+  .img-conocenos {
+    height: 80vh;
+  }
+}
+@media (min-width: 520px) {
+  .img-conocenos {
+    height: 80vh;
   }
 }
 

@@ -272,3 +272,14 @@ header{
 .fieldset-renta_3{
     @extend .fieldset-renta_1;
 }
+
+//CONOCENOS
+.img-conocenos{
+    @include xs {
+        height: 80vh;
+    }
+
+    @include sm {
+        height: 80vh;
+    }
+}

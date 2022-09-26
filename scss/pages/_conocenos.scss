@@ -1,3 +1,27 @@
+@import "../utils/variables";
+
+.section-conocenos{
+    width: 100%;
+    padding: 78px 0px;
+
+}
+
 .main-conocenos{
-    height: 100vh;
+    width: 95%;
+    max-width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-conocenos{
+    width: 40vw;
+    height: auto;
+}
+
+.text-conocenos{
+    width: 40vw;
+    text-align: center;
+
 }
